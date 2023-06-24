@@ -1,0 +1,300 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6DAE47F6-DF86-460D-871F-4C9A2A9F8862}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>LinkedListGit</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\linked-list" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\objects\07\22563c9dedb2c39a4dc993300d8c3ede575e63" />
+    <None Include=".git\objects\11\08d7d45c53ad40052a07dcf39b05d4368b2a0f" />
+    <None Include=".git\objects\1a\6091802ca141d3a58286b93c30d65785503d23" />
+    <None Include=".git\objects\1f\f0c423042b46cb1d617b81efb715defbe8054d" />
+    <None Include=".git\objects\2a\069566cbdd07758c2896fdbfad6d33f320b59b" />
+    <None Include=".git\objects\44\b81b07bb448ba2fc81cfab44c54b01ca31468c" />
+    <None Include=".git\objects\49\7f39063087b82666f9a53356da5f6c4892a194" />
+    <None Include=".git\objects\66\1c178f60a421c3b75ef7d69a19d8ff13e6465a" />
+    <None Include=".git\objects\68\2b93219ef3dd12b43f66e79c8831a853472496" />
+    <None Include=".git\objects\6b\589d39285b8af3e9575ae010de64a18353b64c" />
+    <None Include=".git\objects\76\a21db337a13274c96dbf26fb5fcdcdf60edc79" />
+    <None Include=".git\objects\80\63d48840c3b0a70eefbacbaf9cc5270be34558" />
+    <None Include=".git\objects\89\66ff37282935f110da2b7f437dfc3bf2ca2561" />
+    <None Include=".git\objects\8c\927eb747a6a304db265e6753aee6c47504f604" />
+    <None Include=".git\objects\8f\0e8cb0419dba211b9b2ce1d78c629ef5861e0f" />
+    <None Include=".git\objects\94\91a2fda28342ab358eaf234e1afe0c07a53d62" />
+    <None Include=".git\objects\95\1bbaf25ba3ce98d850a1be07dc1b6f413d73e2" />
+    <None Include=".git\objects\a2\1dbbe3259897b9a88f10e1b44fafb04ded8d68" />
+    <None Include=".git\objects\a7\13357927a90d32c95470eaca66171755780503" />
+    <None Include=".git\objects\ae\fc132c0e9f663fe0fa5a73ea06221cccc43c62" />
+    <None Include=".git\objects\bb\bb87728c5d17438bf457855c63b2066165ac22" />
+    <None Include=".git\objects\ca\c9a819019d24eb823ce9bc5689f7ed7fb0a6bf" />
+    <None Include=".git\objects\cb\eab4ca4e8c6b02736e305a202df3d75bf8bbe1" />
+    <None Include=".git\objects\f0\2677bf640fc66fa042fa584e1b3dcda56f300b" />
+    <None Include=".git\objects\fc\d87c9d869e5adab043d067c8414daa37dd823f" />
+    <None Include=".git\objects\fe\5d7b49da2e1b30101530afae65122f032ab43b" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\linked-list" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".vs\LinkedList\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\LinkedList\FileContentIndex\10405eb0-f189-42f9-b6ad-328c5bacad1c.vsidx" />
+    <None Include=".vs\LinkedList\FileContentIndex\125f2fcd-ed45-4ef0-a662-d42995d9ab27.vsidx" />
+    <None Include=".vs\LinkedList\FileContentIndex\176b2d52-3afb-4d35-89d3-39729272fa2a.vsidx" />
+    <None Include=".vs\LinkedList\FileContentIndex\dca97760-a107-43f3-b53a-74fdcd29f322.vsidx" />
+    <None Include=".vs\LinkedList\FileContentIndex\read.lock" />
+    <None Include=".vs\LinkedList\v17\.futdcache.v2" />
+    <None Include=".vs\LinkedList\v17\.suo" />
+    <None Include=".vs\LinkedList\v17\.wsuo" />
+    <None Include=".vs\LinkedList\v17\TestStore\0\000.testlog" />
+    <None Include=".vs\LinkedList\v17\TestStore\0\testlog.manifest" />
+    <None Include=".vs\ProjectEvaluation\linkedlist.metadata.v7.bin" />
+    <None Include=".vs\ProjectEvaluation\linkedlist.projects.v7.bin" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="LinkedListTest\bin\Debug\net7.0\CoverletSourceRootsMapping" />
+    <None Include="LinkedListTest\bin\Debug\net7.0\LinkedList.deps.json" />
+    <None Include="LinkedListTest\bin\Debug\net7.0\LinkedList.runtimeconfig.json" />
+    <None Include="LinkedListTest\bin\Debug\net7.0\LinkedListTest.deps.json" />
+    <None Include="LinkedListTest\bin\Debug\net7.0\LinkedListTest.runtimeconfig.json" />
+    <None Include="LinkedListTest\bin\Release\net7.0\CoverletSourceRootsMapping" />
+    <None Include="LinkedListTest\LinkedListTest.csproj" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.AssemblyInfoInputs.cache" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.assets.cache" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.csproj.AssemblyReference.cache" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.csproj.BuildWithSkipAnalyzers" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.csproj.CopyComplete" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.csproj.CoreCompileInputs.cache" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.genruntimeconfig.cache" />
+    <None Include="LinkedListTest\obj\LinkedListTest.csproj.nuget.dgspec.json" />
+    <None Include="LinkedListTest\obj\LinkedListTest.csproj.nuget.g.props" />
+    <None Include="LinkedListTest\obj\LinkedListTest.csproj.nuget.g.targets" />
+    <None Include="LinkedListTest\obj\project.assets.json" />
+    <None Include="LinkedListTest\obj\project.nuget.cache" />
+    <None Include="LinkedListTest\obj\Release\net7.0\LinkedListTest.AssemblyInfoInputs.cache" />
+    <None Include="LinkedListTest\obj\Release\net7.0\LinkedListTest.assets.cache" />
+    <None Include="LinkedListTest\obj\Release\net7.0\LinkedListTest.csproj.AssemblyReference.cache" />
+    <None Include="LinkedListTest\obj\Release\net7.0\LinkedListTest.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="LinkedList\bin\Debug\net7.0\LinkedList.deps.json" />
+    <None Include="LinkedList\bin\Debug\net7.0\LinkedList.runtimeconfig.json" />
+    <None Include="LinkedList\LinkedList.csproj" />
+    <None Include="LinkedList\obj\Debug\net7.0\LinkedList.AssemblyInfoInputs.cache" />
+    <None Include="LinkedList\obj\Debug\net7.0\LinkedList.assets.cache" />
+    <None Include="LinkedList\obj\Debug\net7.0\LinkedList.csproj.AssemblyReference.cache" />
+    <None Include="LinkedList\obj\Debug\net7.0\LinkedList.csproj.BuildWithSkipAnalyzers" />
+    <None Include="LinkedList\obj\Debug\net7.0\LinkedList.csproj.CoreCompileInputs.cache" />
+    <None Include="LinkedList\obj\Debug\net7.0\LinkedList.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="LinkedList\obj\Debug\net7.0\LinkedList.genruntimeconfig.cache" />
+    <None Include="LinkedList\obj\LinkedList.csproj.nuget.dgspec.json" />
+    <None Include="LinkedList\obj\LinkedList.csproj.nuget.g.props" />
+    <None Include="LinkedList\obj\LinkedList.csproj.nuget.g.targets" />
+    <None Include="LinkedList\obj\project.assets.json" />
+    <None Include="LinkedList\obj\project.nuget.cache" />
+    <None Include="LinkedList\obj\Release\net7.0\LinkedList.AssemblyInfoInputs.cache" />
+    <None Include="LinkedList\obj\Release\net7.0\LinkedList.assets.cache" />
+    <None Include="LinkedList\obj\Release\net7.0\LinkedList.csproj.AssemblyReference.cache" />
+    <None Include="LinkedList\obj\Release\net7.0\LinkedList.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\LinkedList.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\LinkedList.exe" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\LinkedList.pdb" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\LinkedListTest.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\LinkedListTest.pdb" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.TestPlatform.CommunicationUtilities.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.TestPlatform.CoreUtilities.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.TestPlatform.CrossPlatEngine.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.TestPlatform.PlatformAbstractions.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.TestPlatform.Utilities.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.Common.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\Newtonsoft.Json.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\NuGet.Frameworks.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\testhost.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\testhost.exe" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\xunit.abstractions.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\xunit.assert.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\xunit.core.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\xunit.execution.dotnet.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\xunit.runner.reporters.netcoreapp10.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\xunit.runner.utility.netcoreapp10.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll" />
+    <Content Include="LinkedListTest\bin\Debug\net7.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll" />
+    <Content Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.csproj.FileListAbsolute.txt" />
+    <Content Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.dll" />
+    <Content Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.pdb" />
+    <Content Include="LinkedListTest\obj\Debug\net7.0\refint\LinkedListTest.dll" />
+    <Content Include="LinkedListTest\obj\Debug\net7.0\ref\LinkedListTest.dll" />
+    <Content Include="LinkedList\bin\Debug\net7.0\LinkedList.dll" />
+    <Content Include="LinkedList\bin\Debug\net7.0\LinkedList.exe" />
+    <Content Include="LinkedList\bin\Debug\net7.0\LinkedList.pdb" />
+    <Content Include="LinkedList\obj\Debug\net7.0\apphost.exe" />
+    <Content Include="LinkedList\obj\Debug\net7.0\LinkedList.csproj.FileListAbsolute.txt" />
+    <Content Include="LinkedList\obj\Debug\net7.0\LinkedList.dll" />
+    <Content Include="LinkedList\obj\Debug\net7.0\LinkedList.pdb" />
+    <Content Include="LinkedList\obj\Debug\net7.0\refint\LinkedList.dll" />
+    <Content Include="LinkedList\obj\Debug\net7.0\ref\LinkedList.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LinkedListTest\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.AssemblyInfo.cs" />
+    <Compile Include="LinkedListTest\obj\Debug\net7.0\LinkedListTest.GlobalUsings.g.cs" />
+    <Compile Include="LinkedListTest\obj\Release\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="LinkedListTest\obj\Release\net7.0\LinkedListTest.AssemblyInfo.cs" />
+    <Compile Include="LinkedListTest\obj\Release\net7.0\LinkedListTest.GlobalUsings.g.cs" />
+    <Compile Include="LinkedListTest\UnitTest1.cs" />
+    <Compile Include="LinkedListTest\Usings.cs" />
+    <Compile Include="LinkedList\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="LinkedList\obj\Debug\net7.0\LinkedList.AssemblyInfo.cs" />
+    <Compile Include="LinkedList\obj\Debug\net7.0\LinkedList.GlobalUsings.g.cs" />
+    <Compile Include="LinkedList\obj\Release\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" />
+    <Compile Include="LinkedList\obj\Release\net7.0\LinkedList.AssemblyInfo.cs" />
+    <Compile Include="LinkedList\obj\Release\net7.0\LinkedList.GlobalUsings.g.cs" />
+    <Compile Include="LinkedList\Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\logs\refs\remotes\" />
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\remotes\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\LinkedList\FileContentIndex\merges\" />
+    <Folder Include="LinkedListTest\obj\Release\net7.0\refint\" />
+    <Folder Include="LinkedListTest\obj\Release\net7.0\ref\" />
+    <Folder Include="LinkedList\bin\Release\net7.0\" />
+    <Folder Include="LinkedList\obj\Release\net7.0\refint\" />
+    <Folder Include="LinkedList\obj\Release\net7.0\ref\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
