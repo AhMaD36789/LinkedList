@@ -26,6 +26,7 @@ namespace LinkedListTest
             var result = test.Head;
             //assert
             Assert.Equal(1, test.Head.data);
+
         }
 
         [Fact]

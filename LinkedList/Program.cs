@@ -7,12 +7,12 @@
             SinglyLinkedList test = new SinglyLinkedList();
             test.AddNodeToFront(1);
             test.AddNodeToFront(2);
-            //test.AddNodeToFront(3);
-            //test.AddNodeToFront(4);
-            //test.AddNodeToFront(5);
-            //test.AddNodeToFront(6);
-            //test.AddNodeToFront(7);
-            //Console.WriteLine(test.ExistInLinkedList(5));
+            test.AddNodeToFront(3);
+            test.AddNodeToFront(4);
+            test.AddNodeToFront(5);
+            test.AddNodeToFront(6);
+            test.AddNodeToFront(7);
+            Console.WriteLine(test.ExistInLinkedList(5));
             Console.WriteLine(test.StringifyLinkedList());
         }
     }
